@@ -1,0 +1,27 @@
+# Read about `build.yaml` at https://pub.dev/packages/build_config
+builders:
+
+  validation_generator:
+    import: "package:squarealfa_entity_generator/squarealfa_entity_generator.dart"
+    builder_factories: ["validationGeneratorBuilder"]
+    build_extensions: {".dart": ["validation.g.part"]}
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]
+
+  builder_generator:
+    import: "package:squarealfa_entity_generator/squarealfa_entity_generator.dart"
+    builder_factories: ["builderBuilder"]
+    build_extensions: {".dart": ["builder.g.part"]}
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]
+
+  copywith_generator:
+    import: "package:squarealfa_entity_generator/squarealfa_entity_generator.dart"
+    builder_factories: ["copyWithBuilder"]
+    build_extensions: {".dart": ["copywith.g.part"]}
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]
+

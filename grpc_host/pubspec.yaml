@@ -1,0 +1,23 @@
+name: grpc_host
+description: A starting point for Dart libraries or applications.
+# version: 1.0.0
+# homepage: https://www.example.com
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  nosql_repository:
+    path: ../nosql_repository
+  security_repository:
+    path: ../security_repository
+  squarealfa_entity_adapter:
+    path: ../entity_adapter/entity_adapter
+  squarealfa_security:
+    path: ../squarealfa_security
+  grpc: ^3.0.0
+  kiwi: ^3.0.0-nullsafety.1
+  yaml: ^3.1.0
+
+dev_dependencies:
+  pedantic: ^1.9.0
+  test: ^1.14.4

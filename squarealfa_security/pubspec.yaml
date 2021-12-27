@@ -1,0 +1,16 @@
+name: squarealfa_security
+description: Package containing security-related features, like JWT token handling and password hashing.
+repository: https://github.com/squarealfa/dart_framework
+homepage: https://github.com/squarealfa/dart_framework/tree/main/security
+version: 1.0.5
+
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  crypto: ^3.0.0
+  cryptography: ^2.0.1
+
+dev_dependencies:
+  test: ^1.17.11
